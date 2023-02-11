@@ -1,0 +1,6 @@
+<form method="post">
+    {% csrf_token %}
+    <p>Confirm Delete? {{ task }}</p>
+    <input type="submit" value="Yes">
+    <a href="{% url 'taskviews' %}"> No</a>
+</form>
